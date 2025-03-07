@@ -565,57 +565,7 @@ const NewTrainingRequest = () => {
     setIsFormValid(validateForm())
   }
 
-  // const addEmployee = async () => {
-  //   const newEmployees = [];
-  //   const invalidEmails = [];
-
-  //   // Add selected employee from "Select Employee" field
-  //   if (
-  //     selectedEmployee &&
-  //     !formData.employees.some((emp) => emp.id === selectedEmployee.id)
-  //   ) {
-  //     newEmployees.push({
-  //       ...selectedEmployee,
-  //       availableFrom: "",
-  //       bandwidth: "",
-  //       weekend: "",
-  //     });
-  //     setSelectedEmployee(null); // Clear the selected employee after adding
-  //   }
-
-  //   // Process comma-separated emails
-  //   if (formData.emails.trim() !== "") {
-  //     const emailList = formData.emails.split(",").map((email) => email.trim());
-  //     const uniqueEmails = [...new Set(emailList)]; // Remove duplicate emails
-
-  //     for (const email of uniqueEmails) {
-  //       const employee = await handleEmailSearch(email);
-  //       if (employee) {
-  //         // Check if the employee is already in the list
-  //         if (!formData.employees.some((emp) => emp.id === employee.id)) {
-  //           newEmployees.push(employee);
-  //         }
-  //       } else {
-  //         invalidEmails.push(email);
-  //       }
-  //     }
-  //     if (invalidEmails.length > 0) {
-  //       setSnackbarMessage(`Invalid emails: ${invalidEmails.join(", ")}`);
-  //       setSnackbarSeverity("error");
-  //       setSnackbarOpen(true);
-  //     }
-  //   }
-
-  //   setFormData((prevFormData) => ({
-  //     ...prevFormData,
-  //     employees: [...prevFormData.employees, ...newEmployees],
-  //     showTable: true,
-  //     showSummary: true,
-  //     emails: "", // Clear the email input field
-  //     invalidEmails: invalidEmails, // Store invalid emails
-  //   }));
-  //   setIsFormValid(validateForm());
-  // };
+  
 
   const addEmployee = async () => {
     const newEmployees = []
